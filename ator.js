@@ -9,13 +9,14 @@ let colisao = false;
 //Funções Ator
 
 function mostraAtor(){
-  image(imgAtor, xAtor, yAtor, diaAtor, diaAtor);
+  image(bolaParada, xAtor, yAtor, diaAtor, diaAtor);
    
 }
 
 function moveAtor(){
     if(keyIsDown(UP_ARROW)){
         yAtor -= 5;
+        image(bolaRodando, xAtor, yAtor, diaAtor, diaAtor)
     }
     if(keyIsDown(DOWN_ARROW) && yAtor < 368){
         yAtor += 5;

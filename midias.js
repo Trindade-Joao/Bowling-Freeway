@@ -7,12 +7,15 @@ let imgCarro2;
 let imgCarro3;
 let imgPolicia;
 let imgCarros;
+let bolaParada;
+let bolaRodando;
 
 
 //variáveis de som
 let somColidiu;
 let somPontos;
 let somTrilha;
+let bolaDeBoliche;
 
 
 //Função de load das imagens e sons
@@ -24,6 +27,8 @@ function preload(){
   imgCarro1 = loadImage("Imagens/carro-1.png");
   imgCarro2 = loadImage("Imagens/carro-2.png");
   imgCarro3 = loadImage("Imagens/carro-3.png");
+  bolaParada = loadImage("Imagens/bola1.png");
+  bolaRodando = loadImage("imagens/azul.gif")
     
   
   //criação da lista com as imagens dos carros
@@ -35,6 +40,7 @@ function preload(){
   somColidiu = loadSound("Sons/colisao.wav");
   somPontos = loadSound("Sons/pontos.wav");
   somTrilha = loadSound("Sons/trilha.wav");
+  bolaDeBoliche = loadSound("Sons/bola_de_boliche.wav");
   
 }
 

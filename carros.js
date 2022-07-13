@@ -29,6 +29,7 @@ function fimDaTela(xCarro){
 }
 
 function reiniciarCarros(){
+  
     for(let i = 0; i < imgCarros.length; i ++){
         if(fimDaTela(xCarros[i])){
             xCarros[i] = 600;
