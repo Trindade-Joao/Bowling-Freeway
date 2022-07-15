@@ -1,18 +1,16 @@
 //variáveis de imagens
 
 let imgAtor;
-let imgEstrada;
-let imgCarro1;
-let imgCarro2;
-let imgCarro3;
-let imgPolicia;
-let imgCarros;
-let bolaParada;
-let bolaRodando;
+let imgAtorMov;
+let imgPiso;
+let imgBola1;
+let imgBola2;
+let imgBola3;
+let imgBolas;
 
 
 //variáveis de som
-let somColidiu;
+let somStrike;
 let somPontos;
 let somTrilha;
 let bolaDeBoliche;
@@ -20,29 +18,29 @@ let bolaDeBoliche;
 
 //Função de load das imagens e sons
 
-function preload(){
+function preload() {
   //load das imagens
-  imgAtor = loadImage("Imagens/ator-1.png");
-  imgEstrada = loadImage("Imagens/estrada.png");
-  imgCarro1 = loadImage("Imagens/carro-1.png");
-  imgCarro2 = loadImage("Imagens/carro-2.png");
-  imgCarro3 = loadImage("Imagens/carro-3.png");
-  bolaParada = loadImage("Imagens/bola1.png");
-  bolaRodando = loadImage("imagens/azul.gif")
-    
-  
+  imgAtor = loadImage("imagens/pino-de-boliche.png");
+  imgAtorMov = loadImage("imagens/pino-de-boliche.gif");
+  imgPiso = loadImage("Imagens/piso_boliche.png");
+  imgBola1 = loadImage("Imagens/azul.gif");
+  imgBola2 = loadImage("Imagens/rosa.gif");
+  imgBola3 = loadImage("Imagens/verde.gif");
+
+
+
   //criação da lista com as imagens dos carros
-  
-  imgCarros = [imgCarro1, imgCarro2, imgCarro3, imgCarro1, imgCarro2, imgCarro3];
-  
+
+  imgBolas = [imgBola1, imgBola2, imgBola3, imgBola1, imgBola2, imgBola3];
+
   //load dos sons
 
-  somColidiu = loadSound("Sons/colisao.wav");
+  somStrike = loadSound("Sons/strike.wav");
   somPontos = loadSound("Sons/pontos.wav");
   somTrilha = loadSound("Sons/trilha.wav");
   bolaDeBoliche = loadSound("Sons/bola_de_boliche.wav");
-  
+
 }
 
-  
-  
+
+
