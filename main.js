@@ -8,6 +8,7 @@ function setup() {
 
 function draw() {
   background(imgPiso);
+  mostraPlacar();
   mostraBolaDeBoliche();
   moveBolaDeBoliche();
   moveAtor();

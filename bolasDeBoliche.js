@@ -34,7 +34,7 @@ function reiniciarBolasDeBoliche() {
         if (fimDaTela(xBolas[i])) {
             xBolas[i] = 780;
             if (i % 2 == 1) {
-                bolaDeBoliche.play()
+                //bolaDeBoliche.play()
             }
         }
     }

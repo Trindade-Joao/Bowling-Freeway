@@ -7,6 +7,9 @@ let imgBola1;
 let imgBola2;
 let imgBola3;
 let imgBolas;
+let imgPlacar;
+let imgVida;
+let imgPerdeuVida;
 
 
 //variáveis de som
@@ -26,7 +29,9 @@ function preload() {
   imgBola1 = loadImage("Imagens/azul.gif");
   imgBola2 = loadImage("Imagens/rosa.gif");
   imgBola3 = loadImage("Imagens/verde.gif");
-
+  imgPlacar = loadImage("Imagens/placar.png");
+  imgVida = loadImage("Imagens/vida-1.png");
+  imgPerdeuVida = loadImage("Imagens/vida-2.png");
 
 
   //criação da lista com as imagens dos carros

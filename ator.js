@@ -6,7 +6,6 @@ let xAtor = 100;
 let yAtor = 530;
 let hAtor = 70;
 let wAtor = 30;
-let ponto = 0;
 let colisao = false;
 let movimento = false;
 
@@ -39,9 +38,9 @@ function verificaColisao() {
     colisao = collideRectCircle(xAtor, yAtor, wAtor, hAtor, xBolas[i], yBolas[i], raioBola);
     if (colisao) {
       colidiu();
-      if (maiorQueZero()) {
-        ponto--;
-      }
+      // if (maiorQueZero()) {
+      //   ponto--;
+      // }
     }
   }
 }
@@ -52,25 +51,6 @@ function colidiu() {
 
 }
 
-function marcaPonto() {
-  if (yAtor < 15) {
-    somPontos.play()
-    ponto++;
-    voltaAtorProInicio();
-
-  }
-
-}
-
-function maiorQueZero() {
-  return ponto > 0;
-}
-function mostraPontos() {
-  textAlign(CENTER);
-  textSize(20);
-  fill(245, 7, 241);
-  text(ponto, 270, 25,);
-}
 
 function voltaAtorProInicio() {
   yAtor = yAtorInicial;
