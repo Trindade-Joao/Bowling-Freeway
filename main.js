@@ -1,4 +1,5 @@
 //Funçoes Principais
+let pagina = 1;
 
 
 function setup() {
@@ -7,17 +8,13 @@ function setup() {
 }
 
 function draw() {
-  background(imgPiso);
-  mostraPlacar();
-  mostraVida();
-  mostraBolaDeBoliche();
-  moveBolaDeBoliche();
-  moveAtor();
-  mostraAtor();
-  reiniciarBolasDeBoliche();
-  marcaPonto();
-  mostraPontos();
-  verificaColisao();
-
-
+	if(pagina === 1){
+		paginaInicial();
+	}
+	if(pagina === 2){
+		paginaPrincipal();
+	}
+	if(pagina === 3){
+		paginaFinal();
+	}
 }

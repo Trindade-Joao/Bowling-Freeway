@@ -23,7 +23,7 @@ function mostraPontos() {
   textAlign(CENTER);
   textSize(28);
   fill(255, 255, 20);
-  text(ponto, 350, 30,);
+  text(ponto, 350, 30);
 }
 function mostraPlacar() {
   image(imgPlacar, 300, -8, 100, 60);
