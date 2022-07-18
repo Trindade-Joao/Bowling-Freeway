@@ -25,5 +25,8 @@ function mouseClicked(){
         if(pagina === 1){
             pagina = 2;            
         }
+        if(pagina === 3){
+            pagina = 1;
+        }
     }
 }

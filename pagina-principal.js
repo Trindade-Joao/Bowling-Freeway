@@ -12,4 +12,5 @@ function paginaPrincipal() {
     marcaPonto();
     mostraPontos();
     verificaColisao();
+    fimDeJogo()
 }
