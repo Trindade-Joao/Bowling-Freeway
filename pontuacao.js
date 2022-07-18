@@ -37,3 +37,8 @@ function mostraVida() {
     image(imgPerdeuVida, xVidas[i], 3, wVida, hVida);
   }
 }
+function fimDeJogo(){
+  if (vidas < 0 ){
+    pagina = 3;
+  }
+}
