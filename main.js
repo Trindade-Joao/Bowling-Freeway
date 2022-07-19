@@ -1,20 +1,30 @@
 //Funçoes Principais
-let pagina = 3;
+let tela = 1;
 
 
 function setup() {
   createCanvas(700, 600);
-  //somTrilha.loop()
+//   if(tela === 1){
+// 	somInicial.loop();
+//   }
+//   if(tela === 2){
+// 	somTrilha.loop();
+//   }
+//   if(tela === 3){
+// 	somDerrota.loop();
+//   }
+  
 }
 
 function draw() {
-	if(pagina === 1){
+	if(tela === 1){
 		paginaInicial();
 	}
-	if(pagina === 2){
+	if(tela === 2){
 		paginaPrincipal();
 	}
-	if(pagina === 3){
+	if(tela === 3){
 		paginaFinal();
 	}
+	
 }

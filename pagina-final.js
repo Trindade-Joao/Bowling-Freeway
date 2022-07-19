@@ -1,11 +1,18 @@
+let yBotaoInicio = 500
+
 function paginaFinal(){
-    background(50, 152, 50);
-    botao(xBotao1, yBotao1, "Reiniciar")
+    background(0);
+    image(imgGameOver, 20, 10, 650, 400)
+    image(imgInicio, xBotao, yBotaoInicio, wBotao, hBotao);
     pontuacaoMaxima()
+    somTrilha = somDerrota;
 }
+
 function pontuacaoMaxima(){
-    textSize(48)
-    text("Sua pontuação foi:", 350, 120)
-    text(ponto, 350, 250)
+    textSize(30);
+    fill(255);
+    textAlign(CENTER);
+    text("Sua pontuação foi:", width / 2, 350)
+    text(ponto, width / 2, 400)
 }
 

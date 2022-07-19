@@ -39,6 +39,6 @@ function mostraVida() {
 }
 function fimDeJogo(){
   if (vidas < 0 ){
-    pagina = 3;
+    tela = 3;
   }
 }

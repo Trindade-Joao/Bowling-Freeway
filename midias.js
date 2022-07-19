@@ -10,13 +10,23 @@ let imgBolas;
 let imgPlacar;
 let imgVida;
 let imgPerdeuVida;
+let imgFacil;
+let imgMedio;
+let imgDificil;
+let imgInicio;
+let imgGameOver;
+
 
 
 //variáveis de som
 let somStrike;
 let somPontos;
+let somTrilha1;
 let somTrilha;
 let bolaDeBoliche;
+let somClick;
+let somInicial;
+let somDerrota;
 
 
 //Função de load das imagens e sons
@@ -32,6 +42,11 @@ function preload() {
   imgPlacar = loadImage("Imagens/placar.png");
   imgVida = loadImage("Imagens/vida-1.png");
   imgPerdeuVida = loadImage("Imagens/vida-2.png");
+  imgFacil = loadImage("Imagens/facil.png");
+  imgDificil = loadImage("Imagens/dificil.png");
+  imgMedio = loadImage("Imagens/medio.png");
+  imgInicio = loadImage("Imagens/inicio.png");
+  imgGameOver = loadImage("Imagens/GameOver.gif")
 
 
   //criação da lista com as imagens dos carros
@@ -44,7 +59,11 @@ function preload() {
   somPontos = loadSound("Sons/pontos.wav");
   somTrilha = loadSound("Sons/trilha.wav");
   bolaDeBoliche = loadSound("Sons/bola_de_boliche.wav");
-
+  somClick = loadSound("Sons/click.wav");
+  somInicial = loadSound("Sons/inicial.wav");
+  somDerrota = loadSound("Sons/derrota.wav");
+  
+  
 }
 
 

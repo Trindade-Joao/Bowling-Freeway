@@ -1,6 +1,6 @@
 
 function paginaPrincipal() {
-    
+    somTrilha = somTrilha1;
     background(imgPiso);
     mostraPlacar();
     mostraVida();

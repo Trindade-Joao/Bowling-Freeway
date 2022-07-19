@@ -2,12 +2,18 @@
 
 let diametroBola = 50;
 let raioBola = 25
+let dif = 1;
+let velocidadeBolas = [];
+let velocidadeBolasFacil = [2, 2.5, 3.2, 5, 3.3, 2.2];
+let velocidadeBolasMedio = [4, 4.5, 5.2, 7, 5.3, 4.2];
+let velocidadeBolasDificil = [6, 6.5, 7.2, 9, 7.3, 6.2];
+
 
 //listas dos carros
 
 let xBolas = [600, 600, 600, 600, 600, 600];
 let yBolas = [45, 130, 225, 310, 395, 480];
-let velocidadeBolas = [2, 2.5, 3.2, 5, 3.3, 2.2];
+
 
 
 //Funções carros
