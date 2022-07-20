@@ -5,7 +5,7 @@ let tela = 1;
 function setup() {
   createCanvas(700, 600);
 //   if(tela === 1){
-// 	somInicial.loop();
+	somInicial.loop();
 //   }
 //   if(tela === 2){
 // 	somTrilha.loop();
@@ -17,6 +17,7 @@ function setup() {
 }
 
 function draw() {
+	mouseOver();
 	if(tela === 1){
 		paginaInicial();
 	}

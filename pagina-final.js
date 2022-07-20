@@ -1,14 +1,14 @@
-let yBotaoInicio = 500
 
-function paginaFinal(){
+
+function paginaFinal() {
     background(0);
-    image(imgGameOver, 20, 10, 650, 400)
-    image(imgInicio, xBotao, yBotaoInicio, wBotao, hBotao);
+    image(imgGameOver, 10, 50, 680, 300)
+    image(imgInicio, width / 2 - (wBtnInicio / 2), yBtnInicio - (hBtnInicio / 5), wBtnInicio, hBtnInicio);
     pontuacaoMaxima()
     somTrilha = somDerrota;
 }
 
-function pontuacaoMaxima(){
+function pontuacaoMaxima() {
     textSize(30);
     fill(255);
     textAlign(CENTER);

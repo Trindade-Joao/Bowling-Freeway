@@ -4,7 +4,7 @@ let ponto = 0;
 let hVida = 35;
 let wVida = 30;
 let vidas = 3;
-let xVidas = [670, 640, 610];
+let xVidas = [470, 440, 410];
 
 function marcaPonto() {
   if (yAtor < 15) {

@@ -15,6 +15,9 @@ let imgMedio;
 let imgDificil;
 let imgInicio;
 let imgGameOver;
+let imgBg;
+let imgPinoInicio;
+let imgBolaInicio;
 
 
 
@@ -46,7 +49,10 @@ function preload() {
   imgDificil = loadImage("Imagens/dificil.png");
   imgMedio = loadImage("Imagens/medio.png");
   imgInicio = loadImage("Imagens/inicio.png");
-  imgGameOver = loadImage("Imagens/GameOver.gif")
+  imgGameOver = loadImage("Imagens/GameOver.gif");
+  imgBg = loadImage("Imagens/img-bg.png");
+  imgBolaInicio = loadImage("Imagens/bola-boliche.gif");
+  imgPinoInicio = loadImage("Imagens/pino-boliche.gif");
 
 
   //criação da lista com as imagens dos carros
