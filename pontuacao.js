@@ -7,38 +7,35 @@ let vidas = 3;
 let xVidas = [470, 440, 410];
 
 function marcaPonto() {
-  if (yAtor < 15) {
-    somPontos.play()
-    ponto++;
-    voltaAtorProInicio();
-
-  }
-
+	if (yAtor < 15) {
+		somPontos.play();
+		ponto++;
+		voltaAtorProInicio();
+	}
 }
 
-function maiorQueZero() {
-  return ponto > 0;
-}
 function mostraPontos() {
-  textAlign(CENTER);
-  textSize(28);
-  fill(255, 255, 20);
-  text(ponto, 350, 30);
+	textAlign(CENTER);
+	textSize(28);
+	fill(255, 255, 20);
+	text(ponto, 350, 30);
 }
+
 function mostraPlacar() {
-  image(imgPlacar, 300, -8, 100, 60);
+	image(imgPlacar, 300, -8, 100, 60);
 }
 
 function mostraVida() {
-  for (let i = 0; i < vidas; i++) {
-    image(imgVida, xVidas[i], 3, wVida, hVida);
-  }
-  for (let i = 3; i >= vidas; i--){
-    image(imgPerdeuVida, xVidas[i], 3, wVida, hVida);
-  }
+	for (let i = 0; i < vidas; i++) {
+		image(imgVida, xVidas[i], 3, wVida, hVida);
+	}
+	for (let i = 3; i >= vidas; i--) {
+		image(imgPerdeuVida, xVidas[i], 3, wVida, hVida);
+	}
 }
-function fimDeJogo(){
-  if (vidas < 0 ){
-    tela = 3;
-  }
+
+function fimDeJogo() {
+	if (vidas < 0) {
+		tela = 3;
+	}
 }

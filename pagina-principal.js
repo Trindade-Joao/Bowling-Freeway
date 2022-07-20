@@ -1,6 +1,5 @@
 
 function paginaPrincipal() {
-    somTrilha = somTrilha1;
     background(imgPiso);
     mostraPlacar();
     mostraVida();
@@ -12,5 +11,5 @@ function paginaPrincipal() {
     marcaPonto();
     mostraPontos();
     verificaColisao();
-    fimDeJogo()
+    fimDeJogo();
 }

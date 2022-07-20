@@ -24,38 +24,35 @@ let imgBolaInicio;
 //variáveis de som
 let somStrike;
 let somPontos;
-let somTrilha1;
-let somTrilha;
 let bolaDeBoliche;
 let somClick;
 let somInicial;
-let somDerrota;
 
 
 //Função de load das imagens e sons
 
 function preload() {
   //load das imagens
+  imgBola1 = loadImage("Imagens/azul.gif");
+  imgBolaInicio = loadImage("Imagens/bola-boliche.gif");
+  imgDificil = loadImage("Imagens/dificil.png");
+  imgFacil = loadImage("Imagens/facil.png");
+  imgGameOver = loadImage("Imagens/GameOver.gif");
+  imgBg = loadImage("Imagens/img-bg.png");
+  imgInicio = loadImage("Imagens/inicio.png");
+  imgMedio = loadImage("Imagens/medio.png");
+  imgPinoInicio = loadImage("Imagens/pino-boliche.gif");
   imgAtor = loadImage("imagens/pino-de-boliche.png");
   imgAtorMov = loadImage("imagens/pino-de-boliche.gif");
   imgPiso = loadImage("Imagens/piso_boliche.png");
-  imgBola1 = loadImage("Imagens/azul.gif");
   imgBola2 = loadImage("Imagens/rosa.gif");
   imgBola3 = loadImage("Imagens/verde.gif");
   imgPlacar = loadImage("Imagens/placar.png");
   imgVida = loadImage("Imagens/vida-1.png");
   imgPerdeuVida = loadImage("Imagens/vida-2.png");
-  imgFacil = loadImage("Imagens/facil.png");
-  imgDificil = loadImage("Imagens/dificil.png");
-  imgMedio = loadImage("Imagens/medio.png");
-  imgInicio = loadImage("Imagens/inicio.png");
-  imgGameOver = loadImage("Imagens/GameOver.gif");
-  imgBg = loadImage("Imagens/img-bg.png");
-  imgBolaInicio = loadImage("Imagens/bola-boliche.gif");
-  imgPinoInicio = loadImage("Imagens/pino-boliche.gif");
 
 
-  //criação da lista com as imagens dos carros
+  //criação da lista com as imagens das bolas
 
   imgBolas = [imgBola1, imgBola2, imgBola3, imgBola1, imgBola2, imgBola3];
 
@@ -63,11 +60,10 @@ function preload() {
 
   somStrike = loadSound("Sons/strike.wav");
   somPontos = loadSound("Sons/pontos.wav");
-  somTrilha = loadSound("Sons/trilha.wav");
   bolaDeBoliche = loadSound("Sons/bola_de_boliche.wav");
   somClick = loadSound("Sons/click.wav");
   somInicial = loadSound("Sons/inicial.wav");
-  somDerrota = loadSound("Sons/derrota.wav");
+  
   
   
 }

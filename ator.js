@@ -44,13 +44,10 @@ function moveAtor() {
 
 function verificaColisao() {
 	for (let i = 0; i < imgBolas.length; i++) {
-		colisao = collideRectCircle(xAtor, yAtor, wAtor, hAtor, xBolas[i], yBolas[i], raioBola);
+		colisao = collideRectCircle(xAtor, yAtor, wAtor, hAtor, xBolas[i], yBolas[i], 25);
 		if (colisao) {
 			colidiu();
 			vidas--;
-			// if (maiorQueZero()) {
-			//   ponto--;
-			// }
 		}
 	}
 }

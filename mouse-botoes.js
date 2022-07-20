@@ -1,42 +1,47 @@
-let xBotao = 275;
+//Todas as funções para criação dos botões, animação dos botões e funcionamento do mouse
+
+let xBotao = 275; //usado em todos os botões
+
 let yBtnFacil = 380;
 let hBtnFacil = 50;
 let wBtnFacil = 150;
+
 let yBtnMedio = 440;
 let wBtnMedio = 150;
 let hBtnMedio = 50;
-let yBotaoDificil = 500;
+
+let yBtnDificil = 500;
 let wBtnDificil = 150;
 let hBtnDificil = 50;
+
 let yBtnInicio = 500;
 let wBtnInicio = 150;
 let hBtnInicio = 50;
-let wBotao = 150;
-let hBotao = 50;
+
 
 function mouseClicked() {
     if (tela === 1) {
-        if (mouseX > xBotao && mouseX < xBotao + wBotao && mouseY > yBtnFacil && mouseY < yBtnFacil + hBotao) {
+        if (mouseX > xBotao && mouseX < xBotao + wBtnFacil && mouseY > yBtnFacil && mouseY < yBtnFacil + hBtnFacil) {
             somClick.play();
             velocidadeBolas = velocidadeBolasFacil;
             tela = 2;
         }
 
-        if (mouseX > xBotao && mouseX < xBotao + wBotao && mouseY > yBtnMedio && mouseY < yBtnMedio + hBotao) {
+        if (mouseX > xBotao && mouseX < xBotao + wBtnMedio && mouseY > yBtnMedio && mouseY < yBtnMedio + hBtnMedio) {
             somClick.play();
             velocidadeBolas = velocidadeBolasMedio;
             tela = 2;
         }
 
-        if (mouseX > xBotao && mouseX < xBotao + wBotao && mouseY > yBotaoDificil && mouseY < yBotaoDificil + hBotao) {
+        if (mouseX > xBotao && mouseX < xBotao + wBtnDificil && mouseY > yBtnDificil && mouseY < yBtnDificil + hBtnDificil) {
             somClick.play();
             velocidadeBolas = velocidadeBolasDificil;
             tela = 2;
-
         }
     }
+
     if (tela === 3) {
-        if (mouseX > xBotao && mouseX < xBotao + wBotao && mouseY > (yBtnInicio - (hBtnFacil / 2)) && mouseY < yBtnInicio + hBotao) {
+        if (mouseX > xBotao && mouseX < xBotao + wBtnInicio && mouseY > (yBtnInicio - (hBtnFacil / 2)) && mouseY < yBtnInicio + hBtnInicio) {
             somClick.play();
             tela = 1;
             vidas = 3;
@@ -47,16 +52,15 @@ function mouseClicked() {
 
 function mouseOver() {
     if (tela === 1) {
-        if (mouseX > xBotao && mouseX < xBotao + wBotao && mouseY > yBtnFacil && mouseY < yBtnFacil + hBtnFacil) {
+        if (mouseX > xBotao && mouseX < xBotao + wBtnFacil && mouseY > yBtnFacil && mouseY < yBtnFacil + hBtnFacil) {
             wBtnFacil = 195;
             hBtnFacil = 65;
         } else {
             wBtnFacil = 150;
             hBtnFacil = 50;
-
         }
 
-        if (mouseX > xBotao && mouseX < xBotao + wBotao && mouseY > yBtnMedio && mouseY < yBtnMedio + hBtnMedio) {
+        if (mouseX > xBotao && mouseX < xBotao + wBtnMedio && mouseY > yBtnMedio && mouseY < yBtnMedio + hBtnMedio) {
             wBtnMedio = 195;
             hBtnMedio = 65;
         } else {
@@ -64,7 +68,7 @@ function mouseOver() {
             hBtnMedio = 50;
         }
 
-        if (mouseX > xBotao && mouseX < xBotao + wBotao && mouseY > yBotaoDificil && mouseY < yBotaoDificil + hBtnDificil) {
+        if (mouseX > xBotao && mouseX < xBotao + wBtnDificil && mouseY > yBtnDificil && mouseY < yBtnDificil + hBtnDificil) {
             wBtnDificil = 195;
             hBtnDificil = 65;
         } else {
@@ -72,7 +76,8 @@ function mouseOver() {
             hBtnDificil = 50;
         }
     }
-    if (tela === 3){
+    
+    if (tela === 3) {
         if (mouseX > xBotao && mouseX < xBotao + wBtnInicio && mouseY > yBtnInicio && mouseY < yBtnInicio + hBtnInicio) {
             wBtnInicio = 195;
             hBtnInicio = 65;
