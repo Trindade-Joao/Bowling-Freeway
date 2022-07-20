@@ -42,8 +42,8 @@ function preload() {
   imgInicio = loadImage("Imagens/inicio.png");
   imgMedio = loadImage("Imagens/medio.png");
   imgPinoInicio = loadImage("Imagens/pino-boliche.gif");
-  imgAtor = loadImage("imagens/pino-de-boliche.png");
-  imgAtorMov = loadImage("imagens/pino-de-boliche.gif");
+  imgAtor = loadImage("Imagens/pino-de-boliche.png");
+  imgAtorMov = loadImage("Imagens/pino-de-boliche.gif");
   imgPiso = loadImage("Imagens/piso_boliche.png");
   imgBola2 = loadImage("Imagens/rosa.gif");
   imgBola3 = loadImage("Imagens/verde.gif");
