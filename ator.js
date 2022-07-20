@@ -62,6 +62,6 @@ function colidiu() {
 function voltaAtorProInicio() {
 	yAtor = yAtorInicial;
 	xAtor = xAtorInicial;
-
+	
 }
 
